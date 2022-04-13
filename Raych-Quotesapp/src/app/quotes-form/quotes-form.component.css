@@ -1,0 +1,35 @@
+.form-control{
+  color: white;
+  background: transparent;
+  font-weight: 570;
+  
+}
+form{
+  padding-top: 3%;
+  display: inline-flex;
+}
+
+label{
+  color: white;
+  font-weight: 600;
+  padding-right: 2%;
+}
+
+.heading{
+  color: white;
+  text-align: center;
+  padding-top: 2%;
+}
+.container{
+  background-color: rgba(0, 0, 0, 0.374);
+  width: 80%;
+  border-radius: 4px;
+  padding-bottom: 5%;
+  box-shadow: 2px 2px 3px 2px black;
+  font-family: 'Architects Daughter', cursive;
+  margin-bottom: 5%;
+}
+#btn1{
+  min-height: 10px;
+  min-width: 15px;
+}
