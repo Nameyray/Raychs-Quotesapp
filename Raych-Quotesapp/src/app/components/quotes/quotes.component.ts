@@ -15,7 +15,7 @@ export class QuotesComponent implements OnInit {
   new Quotes (6, 'Grace','Do not waste your waiting season by doing nothing','Priscilla Raine',new Date(2022,4,8), 0, 0)
  ]
 
- array = number[] = this.quotes.map(quote=>quote.upvotes)
+ array = Number() = this.quotes.map(quote=>quote.upvotes)
   highest = Math.max(...this.array)
   constructor() { }
 
