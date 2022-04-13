@@ -8,30 +8,20 @@
 </head>
 <body>
   <h1 class="h1">RaychsQuotesApp</h1>
+  <div class="overlay">
   <div class="container">
     <div class="row mt-mb-5" >
      
       <div class="col-md-3">
         <h2 class="h2">My Quotes</h2>
-        <div class="overlay">
-          <div class="container">
-            <div class="all-cards">
-              <div  class="card"  style="width: 24rem;">
-                <div class="card-body"> 
-          
-                  <h4 class="card-title" appHighlightQoute ><button  class="btn btn-info btn-sm" id="quotes-button" >upvotes</button><button  class="btn btn-info btn-sm" id="quotes-button" >downvotes</button> </h4>
-                  <p class="card-text" id="param"  ></p>
-                  <span class="card-subtitle mb-2">Posted by: <span id="name"> </span><span id="date">Date posted: <span id="datecolor"></span></span></span>
-                  <button class="bottom">delete</button>
-                </div>
-        </div>
-        
+      
         <app-quotes></app-quotes>
       </div>
       <div class="col-md-9">
         <h2> Quotes Form</h2>
         <app-quotes-form></app-quotes-form>
       </div>
+    </div>
     </div>
   </div>
   

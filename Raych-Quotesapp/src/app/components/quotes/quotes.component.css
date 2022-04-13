@@ -1,0 +1,33 @@
+
+#name{
+  color:rgb(43, 214, 0);
+  font-weight: 700;
+}
+.all-cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#quotes-button{
+  float: right;
+}
+.card{
+  margin-bottom: 2%;
+  background-color: aliceblue;
+  box-shadow: 2px 2px 3px 2px black;
+  width: 24rem;
+  height: 100%;
+}
+#date{
+  float: right;
+  font-size: 14px;
+}
+#datecolor{
+  color: green;
+  font-weight: 700;
+}
+.card-text{
+  font-family: 'Handlee', cursive;
+  font-weight: 570;
+  font-size: 18px;
+}
