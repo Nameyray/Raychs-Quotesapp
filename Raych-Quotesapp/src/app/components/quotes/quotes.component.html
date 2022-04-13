@@ -1,5 +1,5 @@
 <ul *ngFor="let quote of quotes">
-    <div *ngIf="quote.id == +1; ngIfThen highlight else empty "></div>
+    <div *ngIf="quote.id == +3; ngIfThen highlight else empty "></div>
     <ng-template #highlight>
         <li appHighlight>{{quote.id}} {{quote.name}}<span>{{quote.quote}} {{quote.author}} {{quote.datePosted}}</span><br><br><br><span class="text-primary" ml-3><button> upvotes:{{quote.upvotes}}</button></span><span class="text-warning" ml-3><button> downvotes: {{quote.downvotes}}</button></span> </li>
     </ng-template>
