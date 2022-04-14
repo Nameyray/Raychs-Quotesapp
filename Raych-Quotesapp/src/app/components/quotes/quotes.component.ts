@@ -15,14 +15,23 @@ export class QuotesComponent implements OnInit {
   new Quotes (5, 'Sharleen','  You learn to do it after several atempts','Ashley Shirer',new Date(2022,4,9), 0, 0),
   
  ]
+ addNewQuote(){
+   this.quotes.push
+ }
 
 //  array= number() = this.quotes.map(quote=>quote.upvotes)
 //   highest = Math.max(...this.array)
-//   constructor() { }
+  constructor() { }
 
-
+ upvotes: number =0;
+  downvotes: number =0;
 
   ngOnInit(): void {
   }
-
+  onSelect(){
+    this.upvotes++;
+  }
+  onSelect1(){
+    this.downvotes++;
+  }
 }
