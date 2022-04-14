@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Quotes } from '../components/quotes';
 
 @Component({
@@ -19,5 +19,10 @@ this.quoted = new Quotes(0,"","","",new Date(),0,0);
 
   ngOnInit(): void {
   }
+  @Input() quote!:string;
+  @Output() newQuote = new EventEmitter();
 
+  submit(){
+    alert("added Quote")
+  }
 }

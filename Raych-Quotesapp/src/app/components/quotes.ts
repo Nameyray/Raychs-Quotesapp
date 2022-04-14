@@ -4,8 +4,8 @@ export class Quotes {
   quote: string;
   author: string;
   datePosted: Date;
-  upvotes!: number;
-  downvotes!: number;
+  upvotes: number =0;
+  downvotes: number =0;
 
   constructor(id:number,  name:string, quote:string,  author:string,  datePosted: Date,  upvotes:number,  downvotes:number){
   this.id = id;
@@ -13,7 +13,13 @@ export class Quotes {
   this.quote = quote;
   this.author = author;
   this.datePosted = datePosted;
-  upvotes= upvotes;
-  downvotes= downvotes;
+  
   }
+  onSelect(){
+    this.upvotes++;
+  }
+  onSelect1(){
+    this.downvotes++;
+  }
+
 }
